@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import model.Fibonacci;
 
 public class Ex2Controller implements Initializable {
 
@@ -32,8 +33,14 @@ public class Ex2Controller implements Initializable {
 		if (btn.getSource().equals(btnVerify)) {
 			if (!txtNumber.getText().isEmpty()) {
 				try {
-					Integer.parseInt(txtNumber.getText());
+					Fibonacci fibonacci = new Fibonacci();
+					if(fibonacci.fiboCheck(Integer.parseInt(txtNumber.getText()))) {
+						lblResultText.setText("Pertence a sequência de Fibonacci!");
+					}else {
+						lblResultText.setText("Não pertence a sequência de Fibonacci!");
+					}
 					lblResultNumber.setText(txtNumber.getText());
+					
 				} catch (NumberFormatException e) {
 					Alert alert = new Alert(Alert.AlertType.ERROR);
 					alert.setTitle("Atenção!");
