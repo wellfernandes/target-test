@@ -75,6 +75,26 @@ public class ControllerViews {
 		}
 	}
 
+	public static void showEx4View() {
+
+		try {
+			FXMLLoader rootFXML = new FXMLLoader();
+			rootFXML.setLocation(ControllerViews.class.getResource("/view/Ex4View.fxml"));
+			Parent root = rootFXML.load();
+			Scene scene = new Scene(root);
+
+			stageEx4 = new Stage();
+			stageEx4.setTitle("Exercício 4 - Cálculo Faturamento Por Estado");
+			stageEx4.initModality(Modality.WINDOW_MODAL);
+			stageEx4.initOwner(stageMain);
+			stageEx4.setScene(scene);
+			stageEx4.setResizable(false);
+			stageEx4.showAndWait();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static Stage getStageMain() {
 		return stageMain;
 	}
