@@ -48,15 +48,15 @@
                               <Insets left="5.0" right="5.0" />
                            </padding>
                         </Label>
-                        <Label fx:id="lblResultNumber" prefHeight="40.0" prefWidth="86.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <Label fx:id="lblNameFile" prefHeight="44.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.halignment="LEFT">
                            <font>
-                              <Font size="36.0" />
+                              <Font size="14.0" />
                            </font>
                            <GridPane.margin>
                               <Insets left="5.0" right="5.0" />
                            </GridPane.margin>
                         </Label>
-                        <Button fx:id="btnLoadFile" mnemonicParsing="false" onAction="#onClicked" prefHeight="33.0" prefWidth="84.0" text="Carregar" GridPane.columnIndex="1">
+                        <Button fx:id="btnLoadFile" mnemonicParsing="false" onAction="#onClicked" prefHeight="33.0" prefWidth="84.0" text="Carregar" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                            <GridPane.margin>
                               <Insets left="5.0" right="5.0" />
                            </GridPane.margin>

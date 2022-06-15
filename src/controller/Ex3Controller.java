@@ -11,6 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
+import model.util.ReadJson;
 
 public class Ex3Controller implements Initializable {
 
@@ -19,7 +20,7 @@ public class Ex3Controller implements Initializable {
 	@FXML
 	private Button btnCalc;
 	@FXML
-	private Label lblResultNumber;
+	private Label lblNameFile;
 	@FXML
 	private Label lblResultText;
 
@@ -37,27 +38,37 @@ public class Ex3Controller implements Initializable {
 			try {
 				fileChooser = new FileChooser();
 				fileChooser.setTitle("Carregar arquivo JSON");
+				
 
 				if (fileChooser.getExtensionFilters()
 						.add(new FileChooser.ExtensionFilter("JSON file (*.json)", "*.json"))) {
 					file = fileChooser.showOpenDialog(null);
-					if (file.equals(null)) {
+					if (!file.exists()) {
 						Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 						alert.setTitle("JSON");
 						alert.setContentText("Por favor, escolha um arquivo .JSON");
 						alert.show();
 					}
+
+					ReadJson readJson = new ReadJson();
+					//readJson.readJson(file);		//Ler arquivo JSON
+					readJson.convertJsonToObj(file);
+					
 					Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 					alert.setTitle("JSON");
 					alert.setContentText("Arquivo carregado com sucesso!");
 					alert.show();
 					btnLoadFile.setDisable(true);
+
+					btnLoadFile.setText("Carregado");
+					lblNameFile.setText(file.getName());
 				}
 
 			} catch (RuntimeException e) {
-				Alert alert = new Alert(Alert.AlertType.INFORMATION);
-				alert.setTitle("Atenção!");
-				alert.setContentText("Carregue apenas arquivo .JSON");
+				e.printStackTrace();
+				Alert alert = new Alert(Alert.AlertType.ERROR);
+				alert.setTitle("Erro ao carregar");
+				alert.setContentText("Erro ao carregar arquivo.");
 				alert.show();
 			}
 		}
@@ -69,7 +80,7 @@ public class Ex3Controller implements Initializable {
 				alert.show();
 			}
 
-			System.out.println("Calculating");
+			// System.out.println(json);
 		}
 	}
 }
