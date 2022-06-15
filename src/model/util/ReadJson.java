@@ -17,6 +17,8 @@ public class ReadJson {
 	private String json;
 	private List<String> listString = new ArrayList<>();
 
+	private static List<BillingPerDay> listBillingObj = new ArrayList<>();
+
 	public void readJson(File file) {
 
 		Scanner in = null;
@@ -51,9 +53,20 @@ public class ReadJson {
 
 		// for print for test
 		for (int i = 0; i < billingPerDays.length; i++) {
+
+			listBillingObj.add(billingPerDays[i]);
+
 			System.out.println(billingPerDays[i].getDia());
 			System.out.println(billingPerDays[i].getValor());
 			System.out.println("");
 		}
+	}
+
+	public static List<BillingPerDay> getListBillingObj() {
+		return listBillingObj;
+	}
+
+	public static void setListBillingObj(List<BillingPerDay> listBillingObj) {
+		ReadJson.listBillingObj = listBillingObj;
 	}
 }
