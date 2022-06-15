@@ -40,7 +40,6 @@ public class ControllerViews {
 		try {
 			FXMLLoader rootFXML = new FXMLLoader();
 			rootFXML.setLocation(ControllerViews.class.getResource("/view/Ex2View.fxml"));
-			// rootFXML.setController(new Ex2Controller());
 			Parent root = rootFXML.load();
 			Scene scene = new Scene(root);
 
@@ -51,6 +50,26 @@ public class ControllerViews {
 			stageEx2.setScene(scene);
 			stageEx2.setResizable(false);
 			stageEx2.showAndWait();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void showEx3View() {
+
+		try {
+			FXMLLoader rootFXML = new FXMLLoader();
+			rootFXML.setLocation(ControllerViews.class.getResource("/view/Ex3View.fxml"));
+			Parent root = rootFXML.load();
+			Scene scene = new Scene(root);
+
+			stageEx3 = new Stage();
+			stageEx3.setTitle("Exercício 3 - Cálculo Faturamento");
+			stageEx3.initModality(Modality.WINDOW_MODAL);
+			stageEx3.initOwner(stageMain);
+			stageEx3.setScene(scene);
+			stageEx3.setResizable(false);
+			stageEx3.showAndWait();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
