@@ -35,6 +35,7 @@ public class MainController implements Initializable {
 			System.out.println("exercise 4");
 		}
 		if (event.getSource().equals(btnEx5)) {
+			ControllerViews.showEx5View();
 			System.out.println("exercise 5");
 		}
 	}

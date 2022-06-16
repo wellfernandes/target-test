@@ -95,6 +95,26 @@ public class ControllerViews {
 		}
 	}
 
+	public static void showEx5View() {
+
+		try {
+			FXMLLoader rootFXML = new FXMLLoader();
+			rootFXML.setLocation(ControllerViews.class.getResource("/view/Ex5View.fxml"));
+			Parent root = rootFXML.load();
+			Scene scene = new Scene(root);
+
+			stageEx5 = new Stage();
+			stageEx5.setTitle("Exercício 5 - Inverer String");
+			stageEx5.initModality(Modality.WINDOW_MODAL);
+			stageEx5.initOwner(stageMain);
+			stageEx5.setScene(scene);
+			stageEx5.setResizable(false);
+			stageEx5.showAndWait();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static Stage getStageMain() {
 		return stageMain;
 	}
