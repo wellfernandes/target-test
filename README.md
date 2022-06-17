@@ -28,7 +28,7 @@ Para executar a aplicação via executável .Jar, é necessário que alguns pré
 2) Após realizado o download da biblioteca do JavaFX JDK, crie uma pasta no seu computador e extraia o arquivo compactado para ela - o caminho desta pasta será utilizado no comando para executar a aplicação;
 3) Faça o download do arquivo executável target-test.jar e salve em sua área de trabalho;
 
-* [target-test-app.jar](https://bityli.com/wceNAW) - Executável target-test-app.jar no google drive 
+* [target-test-app.jar](https://drive.google.com/file/d/1kARSSTSYuwqZJTr9UZX_rrXhkC3wdkqQ/view?usp=sharing) - Executável target-test-app.jar no google drive 
 
 Para executar o target-test-app.jar é necessário que o argumento seja executado via terminal:
 OBS: O arquivo target-test-app.jar deve estar salvo na área de trabalho.
