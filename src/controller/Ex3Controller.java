@@ -60,7 +60,6 @@ public class Ex3Controller implements Initializable {
 					}
 
 					ReadJson readJson = new ReadJson();
-					// readJson.readJson(file); // reading json file with text and convert to string
 					readJson.convertJsonToObj(file); // reading json file with gson
 
 					Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

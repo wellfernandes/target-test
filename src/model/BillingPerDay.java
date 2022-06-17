@@ -34,7 +34,6 @@ public class BillingPerDay implements Serializable {
 				}
 			}
 		}
-		System.out.println("O menor faturamento foi: " + minBilling); // for print test
 		return minBilling;
 	}
 
@@ -52,7 +51,6 @@ public class BillingPerDay implements Serializable {
 				}
 			}
 		}
-		System.out.println("O maior faturamento foi: " + maxBilling); // for print test
 		return maxBilling;
 	}
 
@@ -62,8 +60,6 @@ public class BillingPerDay implements Serializable {
 		for (int i = 0; i < list.size(); i++) {
 			average += list.get(i).getValor() / 30;
 		}
-		System.out.println("A media do faturamento foi: " + average); // for print test
-
 		return average;
 	}
 

@@ -26,14 +26,6 @@ public class PercentageByState {
 		listPercentState.add(percentOthers);
 		listPercentState.add(sum);
 
-		// print to test
-		System.out.println("São Paulo: " + percentSp);
-		System.out.println("Rio de Janeiro: " + percentRj);
-		System.out.println("Minas Gerais: " + percentMg);
-		System.out.println("Espírito Santo: " + percentEs);
-		System.out.println("Outros: " + percentOthers);
-		System.out.println("Total Faturado: " + sum);
-
 		return listPercentState;
 	}
 

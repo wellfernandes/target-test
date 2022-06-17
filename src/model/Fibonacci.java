@@ -19,7 +19,6 @@ public class Fibonacci {
 			if (currentState == number) {
 				return true;
 			}
-			// System.out.println(currentState);
 		}
 		return false;
 	}

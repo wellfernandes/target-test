@@ -24,19 +24,15 @@ public class MainController implements Initializable {
 
 		if (event.getSource().equals(btnEx2)) {
 			ControllerViews.showEx2View();
-			System.out.println("exercise 2");
 		}
 		if (event.getSource().equals(btnEx3)) {
 			ControllerViews.showEx3View();
-			System.out.println("exercise 3");
 		}
 		if (event.getSource().equals(btnEx4)) {
 			ControllerViews.showEx4View();
-			System.out.println("exercise 4");
 		}
 		if (event.getSource().equals(btnEx5)) {
 			ControllerViews.showEx5View();
-			System.out.println("exercise 5");
 		}
 	}
 

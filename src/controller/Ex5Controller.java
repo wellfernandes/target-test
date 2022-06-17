@@ -35,7 +35,6 @@ public class Ex5Controller implements Initializable {
 
 			String inverted = inverChar.splitString(txtString.getText());
 			lblInvertString.setText(inverted);
-
 		}
 	}
 }
