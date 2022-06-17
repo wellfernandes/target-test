@@ -48,7 +48,7 @@ cd Desktop
 java --module-path C:\Users<SEU-USUARIO-NO-WINDOWS>\PASTA-DA-BIBLIOTECA-JAVAFX\javafx-sdk-18.0.1\lib --add-modules=javafx.controls,javafx.fxml -cp target-test-app.jar
 ```
 
-O sistema sistema operacional utilizado durante o desenvolvimento foi o MacOS, por este motivo alguns campos como labels e textfields podem sofrer distorções gráficas quando executada a aplicação em outros sistemas operacionais. Isso não afetará os resultados da aplicação.
+O sistema operacional utilizado durante o desenvolvimento foi o MacOS, por este motivo alguns campos como labels e textfields podem sofrer distorções gráficas quando executada a aplicação em outros sistemas operacionais. Isso não afetará os resultados da aplicação.
 
 
 ---
