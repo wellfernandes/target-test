@@ -1,5 +1,7 @@
 # Target test
 
+![target-test-app](img/target-test-app.png)
+
 Resolução de teste aplicado pela empresa Target Sistemas. 
 
 ## 🚀 Descrição
