@@ -2,7 +2,7 @@
 
 ![target-test-app](img/target-test-app.png)
 
-![target-test-app](target-test-video.gif)
+![target-test-app](img/target-test-video.gif)
 
 Resolução de teste aplicado pela empresa Target Sistemas. 
 
