@@ -2,7 +2,7 @@
 
 ![target-test-app](img/target-test-app.png)
 
-![target-test-app](img/target-test-video.gif)
+[Vídeo do programa em execução](https://www.youtube.com/watch?v=bafbWkRpUDM)
 
 Resolução de teste aplicado pela empresa Target Sistemas. 
 
