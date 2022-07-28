@@ -104,7 +104,7 @@ public class ControllerViews {
 			Scene scene = new Scene(root);
 
 			stageEx5 = new Stage();
-			stageEx5.setTitle("Exercício 5 - Inverer String");
+			stageEx5.setTitle("Exercício 5 - Inveter String");
 			stageEx5.initModality(Modality.WINDOW_MODAL);
 			stageEx5.initOwner(stageMain);
 			stageEx5.setScene(scene);
