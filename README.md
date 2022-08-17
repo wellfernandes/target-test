@@ -48,6 +48,7 @@ Escreva um programa na linguagem que desejar onde calcule o percentual de repres
 - [x] Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
 - [x] Evite utilizar métodos prontos, como por exemplo o reverse.
 
+---
 
 ### 📋 Pré-requisitos
 
